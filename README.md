@@ -6,7 +6,7 @@ Sono implementate tutte le regole del gioco, le condizioni di vittoria, le carat
 
 I ruoli implementati nella versione 1.0 sono:
 - Buoni
-  - Villico
+  - Contadino
   - Veggente
   - Cavaliere
   - Giustiziere
@@ -20,7 +20,7 @@ I ruoli implementati nella versione 1.0 sono:
   - Insinuo
   - Illusionista
   - Boia
-  - Stregone
+  - Strega
 - Rubavittoria
   - Matto
   - Wendigo

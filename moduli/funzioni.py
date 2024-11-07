@@ -56,7 +56,7 @@ def assegnazione_ruoli(giocatori, lista_ruoli):
 
     # Assegnazione ruoli
     for ruolo in lista_ruoli:
-        if ruolo == 'Villico':
+        if ruolo == 'Contadino':
             pass
         else:
             while True:
@@ -70,14 +70,14 @@ def assegnazione_ruoli(giocatori, lista_ruoli):
     # assegnazione villici
     for ID in giocatori.keys():
         if ID not in ruoli.keys():
-            ruoli[ID] = 'Villico'
+            ruoli[ID] = 'Contadino'
 
     # assegnazione abitanti al villaggio
     for ID in giocatori.keys():
         if ruoli[ID] == 'Lupo':
             nuovo_ruolo = Lupo(ID, giocatori[ID])   
-        if ruoli[ID] == 'Villico':
-            nuovo_ruolo = Villico(ID, giocatori[ID])
+        if ruoli[ID] == 'Contadino':
+            nuovo_ruolo = Contadino(ID, giocatori[ID])
         if ruoli[ID] == 'Cavaliere':
             nuovo_ruolo = Cavaliere(ID, giocatori[ID])
         if ruoli[ID] == 'Veggente':
@@ -92,8 +92,8 @@ def assegnazione_ruoli(giocatori, lista_ruoli):
             nuovo_ruolo = Insinuo(ID, giocatori[ID])
         if ruoli[ID] == 'Illusionista':
             nuovo_ruolo = Illusionista(ID, giocatori[ID])
-        if ruoli[ID] == 'Stregone':
-            nuovo_ruolo = Stregone(ID, giocatori[ID])
+        if ruoli[ID] == 'Strega':
+            nuovo_ruolo = Strega(ID, giocatori[ID])
         if ruoli[ID] == 'Matto':
             nuovo_ruolo = Matto(ID, giocatori[ID])
         if ruoli[ID] == 'Boia':

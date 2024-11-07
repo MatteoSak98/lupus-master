@@ -72,7 +72,7 @@ while not vittoria:
     # durante la notte chiama i ruoli in ordine di priorità. Escludi i Villici
     lupi_già_chiamati = False
     for abitante in sorted(villaggio.abitanti, key=lambda x: x.priorita):
-        if abitante.ruolo == 'Villico':
+        if abitante.ruolo == 'Contadino':
             continue
         if abitante.ruolo == 'Matto':
             continue
